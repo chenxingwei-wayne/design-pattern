@@ -1,7 +1,5 @@
 package com.learning.wayne.designpatterns.commandmode;
 
-import javax.accessibility.AccessibleComponent;
-
 public class SimpleRemoteControl {
     Command slot;
 
