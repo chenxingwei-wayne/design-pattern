@@ -1,5 +1,5 @@
 package com.learning.wayne.designpatterns.observer;
-
+// 这是一个观察者模式的实现。
 public class WeatherStation {
     public static void main(String[] args) {
         WeatherData weatherData = new WeatherData();

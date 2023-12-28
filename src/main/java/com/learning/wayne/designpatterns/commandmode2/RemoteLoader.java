@@ -1,5 +1,6 @@
 package com.learning.wayne.designpatterns.commandmode2;
 
+// 这个一个相对完整的命令模式的实现。
 public class RemoteLoader {
     public static void main(String[] args) {
         RemoteControl remoteControl = new RemoteControl();
