@@ -11,6 +11,7 @@ public class RemoteLoader {
         GarageDoor garageDoor = new GarageDoor(" ");
         Stereo stereo = new Stereo("Living Room");
 
+
         LightOnCommand livingRoomLightOn = new LightOnCommand(livingRoomLight);
         LightOffCommand livingRoomLightOff = new LightOffCommand(livingRoomLight);
         LightOnCommand kitchenRoomLightOn = new LightOnCommand(kitchenLight);
