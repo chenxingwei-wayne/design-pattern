@@ -3,6 +3,7 @@ package com.learning.wayne.designpatterns.strategy.duck;
 import com.learning.wayne.designpatterns.strategy.fly.FlyBehavior;
 import com.learning.wayne.designpatterns.strategy.quack.QuackBehavior;
 
+// 然后由Duck抽象类来组装这些行为。
 public abstract class Duck {
     // 鸭子飞的行为
     FlyBehavior flyBehavior;
