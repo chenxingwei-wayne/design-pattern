@@ -1,6 +1,6 @@
-package com.learning.wayne.designpatterns.Observablefromjdk;
+package com.learning.wayne.designpatterns.observermode.fromearlyjdk;
 
-import com.learning.wayne.designpatterns.observer.DisplayElement;
+import com.learning.wayne.designpatterns.observermode.fromorigin.DisplayElement;
 
 import java.util.Observable;
 import java.util.Observer;

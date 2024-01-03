@@ -1,4 +1,4 @@
-package com.learning.wayne.designpatterns.observermode.fromorigin;
+package com.learning.wayne.designpatterns.observermode.newway;
 // 这是一个观察者模式的实现。
 
 /**
@@ -11,13 +11,14 @@ package com.learning.wayne.designpatterns.observermode.fromorigin;
  * 下面这种其实时自我实现的，jdk本身页也提供了observer以及observable。但是已经在java9被弃用了。
  * 主要由以下三个原因：
  * 1. 不可序列化 2. 没有线程安全，这些方法可以被子类覆盖，事件通知可以一不同的顺序发生。3. 提供的东西少：没有给应用程序提供足够丰富的事件模型。
+ * 本示例在之前的基础上使用最新的PropertyChangeEvent以及PropertyChangeListener实现了观察者模式。
  */
 public class WeatherStation {
     public static void main(String[] args) {
-        WeatherData weatherData = new WeatherData();
-        CurrentConditionDisplay currentConditionDisplay = new CurrentConditionDisplay(weatherData);
-        weatherData.setMeasurements(80, 65, 30.4f);
-        weatherData.setMeasurements(82, 70, 29.2f);
-        weatherData.setMeasurements(78, 90, 29.2f);
+        WeatherData weatherData =  WeatherData.getInstance();
+        weatherData.addPropertyChangeListener(new CurrentConditionDisplay());
+        weatherData.setPressure(30.4F);
+        weatherData.setTemperature(70F);
+        weatherData.setHumidity(78F);
     }
 }

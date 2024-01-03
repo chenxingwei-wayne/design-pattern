@@ -1,4 +1,4 @@
-package com.learning.wayne.designpatterns.observer;
+package com.learning.wayne.designpatterns.observermode.fromorigin;
 
 import java.util.ArrayList;
 

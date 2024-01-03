@@ -1,4 +1,4 @@
-package com.learning.wayne.designpatterns.observermode.fromorigin;
+package com.learning.wayne.designpatterns.observermode.newway;
 
 public interface Subject {
     public void registerObserver(Observer o);

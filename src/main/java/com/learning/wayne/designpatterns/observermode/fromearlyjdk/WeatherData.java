@@ -1,4 +1,4 @@
-package com.learning.wayne.designpatterns.Observablefromjdk;
+package com.learning.wayne.designpatterns.observermode.fromearlyjdk;
 
 import java.util.Observable;
 
