@@ -1,4 +1,4 @@
-package com.learning.wayne.designpatterns.Observer1;
+package com.learning.wayne.designpatterns.Observablefromjdk;
 
 import com.learning.wayne.designpatterns.observer.DisplayElement;
 
