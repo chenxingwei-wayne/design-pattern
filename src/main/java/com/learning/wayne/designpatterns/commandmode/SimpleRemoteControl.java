@@ -1,13 +1,13 @@
 package com.learning.wayne.designpatterns.commandmode;
 
 public class SimpleRemoteControl {
-    Command slot;
+    Command1 slot;
 
     public SimpleRemoteControl() {
 
     }
 
-    public void setCommand(Command command) {
+    public void setCommand(Command1 command) {
         slot = command;
     }
 

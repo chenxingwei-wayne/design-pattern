@@ -1,5 +1,5 @@
 package com.learning.wayne.designpatterns.commandmode;
 
-public interface Command {
+public interface Command1 {
     public void execute();
 }

@@ -1,11 +1,11 @@
 package com.learning.wayne.designpatterns.commandmode;
 
 
-public class LightOnCommand implements Command {
+public class LightOnCommand implements Command1 {
 
-    Light light;
+    Light1 light;
 
-    public LightOnCommand(Light light) {
+    public LightOnCommand(Light1 light) {
         this.light = light;
     }
 

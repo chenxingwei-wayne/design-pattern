@@ -1,26 +1,26 @@
 package com.learning.wayne.designpatterns.commandmode2;
 
 public class RemoteControl {
-    Command[] onCommands;
-    Command[] offCommands;
-    Command undoCommand;
+    Command2[] onCommands;
+    Command2[] offCommands;
+    Command2 undoCommand;
 
 
     public RemoteControl() {
-        this.onCommands = new Command[7];
-        this.offCommands = new Command[7];
+        this.onCommands = new Command2[7];
+        this.offCommands = new Command2[7];
 
-        Command noCommand = new NoCommand();
-
+        Command2 noCommand = new NoCommand();
+        // 开关各7个槽位全部初始化为noCommand
         for (int i = 0; i < 7; i++) {
             onCommands[i] = noCommand;
             offCommands[i] = noCommand;
         }
+        // 还有一个撤销命令，但是目前的撤销命令还是比较局限，只能撤销上一步的操作。
         undoCommand = noCommand;
-
     }
 
-    public void setCommand(int slots, Command onCommand, Command offCommand) {
+    public void setCommand(int slots, Command2 onCommand, Command2 offCommand) {
         onCommands[slots] = onCommand;
         offCommands[slots] = offCommand;
     }

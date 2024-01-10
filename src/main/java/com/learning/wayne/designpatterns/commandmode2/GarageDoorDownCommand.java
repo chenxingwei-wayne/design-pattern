@@ -1,6 +1,6 @@
 package com.learning.wayne.designpatterns.commandmode2;
 
-public class GarageDoorDownCommand implements Command {
+public class GarageDoorDownCommand implements Command2 {
     private GarageDoor garageDoor;
 
     public GarageDoorDownCommand(GarageDoor garageDoor) {

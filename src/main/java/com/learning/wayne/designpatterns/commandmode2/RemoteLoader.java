@@ -4,8 +4,8 @@ package com.learning.wayne.designpatterns.commandmode2;
 public class RemoteLoader {
     public static void main(String[] args) {
         RemoteControl remoteControl = new RemoteControl();
-        Light livingRoomLight = new Light("living room");
-        Light kitchenLight = new Light("Kitchen");
+        Light2 livingRoomLight = new Light2("living room");
+        Light2 kitchenLight = new Light2("Kitchen");
 
         CeilingFan ceilingFan = new CeilingFan("Living Room");
         GarageDoor garageDoor = new GarageDoor(" ");
@@ -24,14 +24,14 @@ public class RemoteLoader {
 
         StereoOnWithCDCommand stereoOnWithCDCommand = new StereoOnWithCDCommand(stereo);
         StereoOffCommand stereoOffCommand = new StereoOffCommand(stereo);
-
+        // 在remoteControl设置好挡位的信息。slot 0， 设置了什么的开关挡位。
         remoteControl.setCommand(0, livingRoomLightOn, livingRoomLightOff);
         remoteControl.setCommand(1, kitchenRoomLightOn, kitchenRoomLightOff);
         remoteControl.setCommand(2, ceilingFanOn, ceilingFanOffCommand);
         remoteControl.setCommand(3, stereoOnWithCDCommand, stereoOffCommand);
 
         System.out.println(remoteControl);
-
+        // 然后就可以调用remote的control的两个方法onButtonWasPushed以及offButtonWasPushed进行调用，通过看点的是哪个槽位出发不同的操作。
         remoteControl.onButtonWasPushed(0);
         remoteControl.offButtonWasPushed(0);
         remoteControl.onButtonWasPushed(1);

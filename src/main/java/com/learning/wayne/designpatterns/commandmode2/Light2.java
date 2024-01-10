@@ -1,10 +1,10 @@
 package com.learning.wayne.designpatterns.commandmode2;
 
-public class Light {
+public class Light2 {
 
     public String location;
 
-    public Light(String location) {
+    public Light2(String location) {
         this.location = location;
     }
 

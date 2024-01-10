@@ -1,6 +1,6 @@
 package com.learning.wayne.designpatterns.commandmode2;
 
-public class StereoOnWithCDCommand implements Command {
+public class StereoOnWithCDCommand implements Command2 {
 
     private Stereo stereo;
 
